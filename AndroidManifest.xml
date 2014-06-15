@@ -28,6 +28,10 @@
             android:name="net.julienlecomte.gridimagesearch.ImageDisplayActivity"
             android:label="@string/title_activity_image_display" >
         </activity>
+        <activity
+            android:name="net.julienlecomte.gridimagesearch.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

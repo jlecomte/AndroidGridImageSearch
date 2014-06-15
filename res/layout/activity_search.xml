@@ -37,4 +37,17 @@
         android:numColumns="3" >
     </GridView>
 
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etSearchBox"
+        android:layout_alignTop="@+id/etSearchBox"
+        android:layout_alignBottom="@+id/etSearchBox"
+        android:layout_marginRight="8dp"
+        android:onClick="onClear"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/clear_btn_title"
+        android:src="@drawable/x_mark_icon" />
+
 </RelativeLayout>
