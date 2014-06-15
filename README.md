@@ -30,3 +30,4 @@ User Stories
 Screen Capture
 --------------
 
+![Screen capture](AnimatedRecording.gif)

@@ -15,10 +15,12 @@
     <string name="medium_size_lbl">Medium</string>
     <string name="large_size_lbl">Large</string>
     <string name="color_lbl">Color:</string>
-    <string name="all_colors_lbl">All Colors</string>
+    <string name="any_colors_lbl">Any</string>
     <string name="black_and_white_lbl">Black &amp; White Only</string>
     <string name="color_only_lbl">Color Only</string>
     <string name="safesearch_lbl">Safe Search:</string>
     <string name="safesearch_toggle">Safe search On/Off</string>
+    <string name="save_btn_lbl">Save</string>
+    <string name="any_size_lbl">Any</string>
 
 </resources>

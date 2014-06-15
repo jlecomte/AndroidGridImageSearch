@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context="${packageName}.${activityClass}" >
 
     <TextView
@@ -23,10 +23,15 @@
         android:layout_below="@+id/tvImageSizeLbl" >
 
         <RadioButton
+            android:id="@+id/rAnySize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/any_size_lbl" />
+
+        <RadioButton
             android:id="@+id/rSmallSize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="@string/small_size_lbl" />
 
         <RadioButton
@@ -54,18 +59,17 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <RadioGroup
-        android:id="@+id/rgColor"
+        android:id="@+id/rgImageColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/tvColorLbl" >
 
         <RadioButton
-            android:id="@+id/rAllColors"
+            android:id="@+id/rAnyColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/all_colors_lbl" />
+            android:text="@string/any_colors_lbl" />
 
         <RadioButton
             android:id="@+id/rBlackAndWhiteOnly"
@@ -85,19 +89,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgImageColor"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/rgColor"
         android:text="@string/safesearch_lbl"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <ToggleButton
-        android:id="@+id/tbSafeSearch"
+    <Switch
+        android:id="@+id/swSafeSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tvSafeSearchLbl"
         android:layout_alignBottom="@+id/tvSafeSearchLbl"
         android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/tvSafeSearchLbl"
-        android:text="@string/safesearch_toggle" />
+        android:layout_toRightOf="@+id/tvSafeSearchLbl" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvSafeSearchLbl"
+        android:layout_marginTop="20dp"
+        android:onClick="onSave"
+        android:text="@string/save_btn_lbl" />
 
 </RelativeLayout>
